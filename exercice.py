@@ -17,13 +17,16 @@ def orthogonal(v1, v2):
 
 
 def average(values):
-    moyenne = 0
+    somme = 0
+    termes = 0
 
     for v in values:
         if v >= 0:
-            moyenne += v
+            somme += v
+            termes += 1
 
-    return moyenne / len(values)
+
+    return somme / termes
 
 
 def bills(value):
