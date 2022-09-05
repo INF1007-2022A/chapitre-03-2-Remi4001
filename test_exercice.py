@@ -20,7 +20,7 @@ class TestExercice(unittest.TestCase):
 		self.assertEqual(
 			expected,
 			output,
-			"Calcul incorrect"
+			"Calcul incorrect 1."
 		)
 
 	def test_orthogonal(self):
@@ -38,7 +38,7 @@ class TestExercice(unittest.TestCase):
 		self.assertEqual(
 			expected,
 			output,
-			"Calcul incorrect"
+			"Calcul incorrect 2."
 		)
 	
 	def test_average(self):
@@ -54,7 +54,7 @@ class TestExercice(unittest.TestCase):
 		self.assertEqual(
 			expected,
 			output,
-			"Calcul incorrect"
+			"Calcul incorrect 3."
 		)
 
 	def test_bills(self):
@@ -80,7 +80,7 @@ class TestExercice(unittest.TestCase):
 		self.assertEqual(
 			expected,
 			output,
-			"Calcul incorrect"
+			"Calcul incorrect 4."
 		)
 		
 
