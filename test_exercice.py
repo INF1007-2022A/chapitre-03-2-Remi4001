@@ -83,7 +83,32 @@ class TestExercice(unittest.TestCase):
 			"Calcul incorrect 4."
 		)
 		
-
+	def test_format_base(self):
+		digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+		data = [
+			(123, 10, digits),
+			(123, 16, digits),
+			(123, 2, digits),
+			(123, 8, digits),
+			(123, 11, digits),
+			(-123, 16, digits),
+			(-123, 20, digits)
+		]
+		expected = [
+			"123",
+			"7B",
+			"1111011",
+			"173",
+			"102",
+			"-7B",
+			"-63"
+		]
+		output = [format_base(*d) for d in data]
+		self.assertEqual(
+			expected,
+			output,
+			"Calcul incorrect"
+		)
 
 if __name__ == "__main__":
 	if not os.path.exists("logs"):
