@@ -20,7 +20,7 @@ Par exemple, la liste [1, 4, -2, 10] donne une moyenne de 5.
 
 Écrire un algorithme qui calcule, à partir d'une valeur entière, la monnaie à rendre en billets de 100$, 20$, 10$, 5$ et en pièces de 1$.
 
-## 5. Formater dans une base donnée
+## 5. Formater dans une base numérique donnée
 
 Écrire un algorithme qui permet de formater un nombre donné dans une base donné en utilisant une séquence de lettres données pour représenter les chiffres. Par exemple, formater 123 en base 16 nous donne 7B, et il faut donc fournir les chiffres hexadécimaux, donc 0123456789ABCDEF.
 
@@ -31,7 +31,7 @@ Exemple d'utilisation :
   print(format_base(12, 2, "01"))
 ```
 Nous donne
-```python
+```
   123
   7B
   1100
